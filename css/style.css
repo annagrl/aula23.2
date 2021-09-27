@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 5.625rem;
+   }
+
+html{
+    font-size: 50px;
+}
+   
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: .9rem;
+
+
+  }
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    background-color:white;
+    top: 0;
+    padding: .4rem; 
+    font-size: .4rem;;
+    flex-wrap: wrap;
+}
+
+main{
+    font-size:.3rem;
+    padding: .5rem 1rem;
+    background-color: aquamarine;
+}
+ul{
+    list-style-type: none;
+}
+header li a{
+    text-decoration: none;
+    padding:0.01rem ;
+    border-radius: .1rem;
+    transition: all .3s ease-in-out;
+    color:black;
+}
+header li a:hover{
+    background-color: aqua;
+}
+
+header ul{
+    display: flex;
+    gap: 0.1rem;
+
+} 
+
+#banner{
+    background-image: url(https://thumbs.dreamstime.com/b/panorama-oia-sunset-santorini-greece-panoramic-famous-view-old-town-ia-island-white-houses-windmills-71764056.jpg);
+    height: calc(100vh - .4rem);
+    background-size: cover;
+  }
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.card-image{
+    height: 5rem;
+    width: 100%;
+    object-fit:cover;
+    transition: all .3s ease-in-out;
+
+}
+
+.card-image img:hover{
+    transform: scale(1.05);
+  }
+
+.image-container{
+    height: 5rem;
+    width: 100%;
+    border-style: outset gray;
+    border-radius: 15px;
+    overflow: hidden;
+    display:flex;
+    justify-content: space-around;
+
+  }
+
+#voltar{
+    padding-bottom: .5rem;
+    padding-top: .1rem;
+}
+
+img{
+width: auto;
+height: 100%;
+overflow: hidden;
+
+}
+
+@media (max-width:768px){
+    .card-grid{grid-template-columns: 1fr 1fr;}
+}
+
+@media (max-width:480px){
+    .card-grid{grid-template-columns: 1fr;}
+}
